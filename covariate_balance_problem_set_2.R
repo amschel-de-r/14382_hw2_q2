@@ -17,7 +17,7 @@ load("wage2015_subsample_inference_5.Rdata")
 
 ### FURTHER ANALYSIS BELOW checking for balance!!  and doing some matching !! ####
 if (!require(MatchIt)) install.packages("MatchIt"); library(MatchIt)
-if (!require(optmatch)) install.packages("optmatch"); library(optmatch)
+# if (!require(optmatch)) install.packages("optmatch"); library(optmatch)
 if (!require(cobalt)) install.packages("cobalt"); library(cobalt)
 
 
