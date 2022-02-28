@@ -1,7 +1,6 @@
 ## loading the data
 rm(list=ls()) # removes all objects from the environment
 cat('\014') # clears the console
-setwd("/Users/Tom/Google Drive (iamtomharris98@gmail.com)/14.382 PhD Metrics")
 
 Penn<- as.data.frame(read.table("penn_jae.dat", header=T ));
 
@@ -11,7 +10,7 @@ p_1 <- dim(Penn)[2]
 Penn<- subset(Penn, tg==4 | tg==0)
 attach(Penn)
 Penn$treatment <- ifelse(Penn$tg == 4, 1, 0)
-
+load("wage2015_subsample_inference_5.Rdata")
 
 #####
 
